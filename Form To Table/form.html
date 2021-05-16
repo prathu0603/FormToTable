@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="form.js"></script>
+</head>
+<body>
+    <form class="form" id="form1">
+    <label class="text">
+        First Name : 
+        <input id="fname" type="text">
+    </label>
+    <label class="text">
+        last Name : 
+        <input id="lname" type="text">
+    </label>
+
+    <div>
+    <h class="text">Address :</h>
+    <textarea id="address" class="textarea" rows="10" cols="40"></textarea>
+    </div>
+
+    <label class="text">
+        Pincode : 
+        <input type="number" id="pincode" placeholder="xxxxxx">
+    </label>
+
+    <div class="text">
+        Gender :  
+        &ensp;
+        <input type="radio" id="male"  name="gender" value="male">
+        <label for="male">Male</label>   
+        <input type="radio" id="female"  name="gender" value="female">
+        <label for="female">Female</label> 
+        <input type="radio" id="others" name="gender" value="others">
+        <label for="others">Others</label> 
+    </div>
+
+    
+        <h class="text"><y>Select Atleast two food items :</y> </h>
+        <div>
+        <label class="text">
+        <input type="checkbox"  id="fooditem1" class="fooditem" name="foodItem" value="Vadapav">
+        Vada Pav </label>
+        <label class="text">
+        <input type="checkbox" id="fooditem2" name="foodItem"  class="fooditem" value="dosa">
+        Dosa</label>
+        <label class="text">
+        <input type="checkbox" id="fooditem3" name="foodItem" class="fooditem" value="chicken">
+        Chicken</label>
+        <label class="text">
+        <input type="checkbox" id="fooditem4" name="foodItem" class="fooditem" value="pizza">
+        Pizza</label>
+        <label class="text">
+        <input type="checkbox" id="fooditem5" name="foodItem" class="fooditem" value="paneer">
+        Paneer</label>
+        </div>
+        
+        <label class="text" >
+            State : 
+            <input type="text" id="state">
+        </label>
+        <label class="text">
+            Country : 
+            <input type="text" id="country">
+        </label>
+        <button type="button" class="btn btn-primary btn-sm" style="margin-left: 50px;" onclick="validate()">Submit</button>
+   </form>
+
+   <table id="tab" class="table table-dark">
+
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>Food items</th>
+            <th>State</th>
+            <th>Country</th>
+        </tr>
+   </table>
+    
+</body>
+</html>
